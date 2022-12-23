@@ -11,6 +11,8 @@ RUN set -x \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
+RUN git config --global url."https://".insteadOf git://
+
 # install s6-overlay
 ADD https://github.com/just-containers/s6-overlay/releases/download/v1.21.7.0/s6-overlay-amd64.tar.gz /tmp/
 RUN tar xzf /tmp/s6-overlay-amd64.tar.gz -C / \
