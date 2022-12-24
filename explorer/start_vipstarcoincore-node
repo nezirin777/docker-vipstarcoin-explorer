@@ -42,6 +42,7 @@ checkblocks=${checkblocks}
 maxuploadtarget=${maxuploadtarget}
 rpcworkqueue=${rpcworkqueue}
 maxconnections=${maxconnections}
+addnode=explorer.vipstarcoin.jp
 _EOS
 
 # generate vipstarcoincore-node.json
